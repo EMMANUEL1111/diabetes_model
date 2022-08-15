@@ -35,7 +35,7 @@ def main():
     Insulin=st.text_input('Insulin Test Value ')
     BMI=st.text_input('BMI Test Value  ')
     DiabetesPedigreeFunction=st.text_input('DiabetesPedigreeFunction Test Value  ')
-    Age=st.text_input('Age of The Value  ')
+    Age=st.text_input('Age of The Patient  ')
 
     if st.button('Predict Diabetes Chances'):
         predict_diabetes=diabetes_data(Pregnancies,Glucose ,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age)[0]
